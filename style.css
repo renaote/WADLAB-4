@@ -152,6 +152,23 @@ tr:nth-child(even) td {
   display: inline-block;
 }
 
+.edit-btn {
+  background: #e8f3ff;
+  border: 1px solid rgba(147,204,255,.6);
+  color: #0e314b;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 5px 5px 0 0;
+  width: auto;
+}
+
+.edit-btn:hover {
+  filter: brightness(0.95);
+}
+
 .remove-btn, .table-btn {
   background: #ffe9e9;
   border: 1px solid #f5b3b3;
@@ -161,9 +178,27 @@ tr:nth-child(even) td {
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 5px;
+  width: auto;
 }
 
 .remove-btn:hover, .table-btn:hover {
+  filter: brightness(0.95);
+}
+
+.table-edit-btn {
+  background: #e8f3ff;
+  border: 1px solid rgba(147,204,255,.6);
+  color: #0e314b;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 5px;
+  width: auto;
+}
+
+.table-edit-btn:hover {
   filter: brightness(0.95);
 }
