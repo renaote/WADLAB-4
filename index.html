@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 4 - Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="reg-box">
+    <h1>Student Registration</h1>
+    <form id="registrationForm">
+      <label>First Name:
+        <input type="text" id="firstName" required>
+      </label>
+      <span class="error" id="firstNameError"></span>
+
+      <label>Last Name:
+        <input type="text" id="lastName" required>
+      </label>
+      <span class="error" id="lastNameError"></span>
+
+      <label>Email:
+        <input type="email" id="email" required>
+      </label>
+      <span class="error" id="emailError"></span>
+
+      <label>Programme:
+        <input type="text" id="programme" required>
+      </label>
+      <span class="error" id="programmeError"></span>
+
+      <label>Year:
+        <select id="year" required>
+          <option value="">-- Select Year --</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </label>
+      <span class="error" id="yearError"></span>
+
+      <label>Interests:
+        <input type="text" id="interests">
+      </label>
+
+      <label>Photo URL:
+        <input type="url" id="photo" required>
+      </label>
+      <span class="error" id="photoError"></span>
+
+      <button type="submit">Add Student</button>
+    </form>
+  </div>
+
+  <div id="feedback"></div>
+
+  <h2>Profile Cards</h2>
+  <div id="cardsContainer"></div>
+
+  <h2>Summary Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Programme</th>
+        <th>Year</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="summaryTable"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
